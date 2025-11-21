@@ -1,9 +1,14 @@
-import type { CapacitorConfig } from '@capacitor/cli';
+import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'mini-instagram',
-  webDir: 'www'
+  appId: 'com.tuapp.miniinstagram',
+  appName: 'Mini Instagram',
+  webDir: 'www',
+  plugins: {
+    Camera: {
+      presentationStyle: 'fullscreen'
+    }
+  }
 };
 
 export default config;

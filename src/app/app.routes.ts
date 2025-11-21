@@ -10,4 +10,44 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'login',
+    loadComponent: () => import('./pages/login/login.page').then( m => m.LoginPage)
+  },
+  {
+    path: 'register',
+    loadComponent: () => import('./pages/register/register.page').then( m => m.RegisterPage)
+  },
+  {
+    path: 'feed',
+    loadComponent: () => import('./pages/feed/feed.page').then( m => m.FeedPage)
+  },
+  {
+    path: 'post-detail',
+    loadComponent: () => import('./pages/post-detail/post-detail.page').then( m => m.PostDetailPage)
+  },
+  {
+    path: 'profile',
+    loadComponent: () => import('./pages/profile/profile.page').then( m => m.ProfilePage)
+  },
+  {
+    path: 'create-post',
+    loadComponent: () => import('./pages/create-post/create-post.page').then( m => m.CreatePostPage)
+  },
+  {
+    path: 'friends',
+    loadComponent: () => import('./pages/friends/friends.page').then( m => m.FriendsPage)
+  },
+  {
+    path: 'create-post',
+    loadComponent: () => import('./pages/create-post/create-post.page').then( m => m.CreatePostPage)
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./pages/login/login.page').then( m => m.LoginPage)
+  },
+  {
+    path: 'register',
+    loadComponent: () => import('./pages/register/register.page').then( m => m.RegisterPage)
+  },
 ];
